@@ -20,7 +20,7 @@ reg add "HKCU\Software\Classes\SystemFileAssociations\.mp4\shell\TrimVid" ^
 
 REM Add the command
 reg add "HKCU\Software\Classes\SystemFileAssociations\.mp4\shell\TrimVid\command" ^
- /ve /d "\"C:\Windows\System32\cmd.exe\" /k trim \"%%1\"" /f >nul
+ /ve /d "\"C:\Windows\System32\cmd.exe\" /c trim \"%%1\"" /f >nul
 
 echo.
 echo ========================================
